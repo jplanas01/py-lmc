@@ -1,0 +1,18 @@
+inp
+sta 80
+inp
+sta 81
+bra 7
+dat 0
+dat 1
+lda 79
+add 81
+sta 79
+lda 80
+sub 6
+sta 80
+brz 15
+bra 7
+lda 79
+out
+bra 5
